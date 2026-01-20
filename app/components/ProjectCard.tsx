@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-
+import { listProyek } from "../lib/dataProyek";
 
 export default function ProjectsPage() {
   return (
-    <section className="min-h-screen bg-black px-8 py-24">
+    <section className="bg-black px-8 py-24">
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
         <div className="mb-16">

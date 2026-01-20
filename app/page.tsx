@@ -5,6 +5,7 @@ import AboutPage from "./about/page"
 import Projects from "./projects/page"
 import ProjectCard from "./components/ProjectCard";
 import { i } from "framer-motion/client";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
        <Hero />
        <AboutPage />
        <Projects />
+       <Contact />
       </div>
     </section>
   );

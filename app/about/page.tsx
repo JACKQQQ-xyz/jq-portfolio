@@ -1,6 +1,20 @@
+interface InfoRowProps {
+  title: string;
+  value: string | number;
+}
+
+function InfoRow({ title, value }: InfoRowProps) {
+  return (
+    <div className="flex justify-between items-center">
+      <span className="text-white/60 text-sm">{title}</span>
+      <span className="text-white font-medium text-right">{value}</span>
+    </div>
+  );
+}
+
 export default function AboutPage() {
   return (
-    <section className="min-h-screen bg-black px-8 py-24">
+    <section className="relative mt-32 px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* LEFT */}
         <div>
@@ -91,14 +105,5 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
-  );
-}
-
-function InfoRow({ title, value }) {
-  return (
-    <div className="flex justify-between items-center">
-      <span className="text-white/60 text-sm">{title}</span>
-      <span className="text-white font-medium text-right">{value}</span>
-    </div>
   );
 }

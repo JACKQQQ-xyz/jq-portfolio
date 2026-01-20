@@ -23,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body className={`${inter.variable} font-sans antialiased bg-neutral-950 text-white pb-[10000px]`}>
+      <body className={`${inter.variable} font-sans antialiased bg-neutral-950 text-white`}>
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

@@ -4,7 +4,7 @@ import { projects } from "../lib/data";
 
 export default function ProjectsPage() {
   return (
-    <section className="min-h-screen bg-black px-8 py-24">
+    <section className="px-8 py-24 mt-12">
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
         <div className="mb-16">
